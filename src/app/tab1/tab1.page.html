@@ -1,17 +1,51 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      homescreen
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-icon name="notifications-circle"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Store Name</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content> 
+  <ion-toolbar>
+   <div class="header">
+    <h1>Categories</h1>
+  </div>
+</ion-toolbar>
+ 
+  <div class="horizontal-cards">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-title>Jami Bot</ion-card-title>
+        <ion-card-subtitle>Full Stack Developer</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      </ion-card-content>
+
+      <img src="assets/images/fruits.jpg">
+    </ion-card>
+
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-title>Jami Bot</ion-card-title>
+        <ion-card-subtitle>Full Stack Developer</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      </ion-card-content>
+
+      <img src="assets/images/fruits.jpg">
+    </ion-card>
+
+  </div>
 </ion-content>
