@@ -12,39 +12,55 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content> 
-  <ion-toolbar>
-   <div class="header">
+<ion-content class="ion-padding"> 
+  <ion-toolbar> 
+    <ion-buttons slot="start">
+       <div class="header">
     <h1>Categories</h1>
   </div>
+    </ion-buttons>
+  <ion-buttons slot="primary">
+    <ion-button>
+      <ion-icon slot="icon-only" name="logo-whatsapp"></ion-icon>
+    </ion-button>
+    
+  </ion-buttons>
+
 </ion-toolbar>
  
-  <div class="horizontal-cards">
+  <div id="container">
 
-    <ion-card color="light">
-      <ion-card-header>
-        <ion-card-title>Jami Bot</ion-card-title>
-        <ion-card-subtitle>Full Stack Developer</ion-card-subtitle>
-      </ion-card-header>
-    
-      <ion-card-content>
-        Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      </ion-card-content>
-
-      <img src="assets/images/fruits.jpg">
+    <ion-card>
+      <img src="assets/images/fruits.jpg"/>
+      <h3>Fruits</h3>
     </ion-card>
-
-    <ion-card color="light">
-      <ion-card-header>
-        <ion-card-title>Jami Bot</ion-card-title>
-        <ion-card-subtitle>Full Stack Developer</ion-card-subtitle>
-      </ion-card-header>
-    
-      <ion-card-content>
-        Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-      </ion-card-content>
-
-      <img src="assets/images/fruits.jpg">
+    <ion-card>
+      <img src="assets/images/veggies.jpg"/>
+      <h3>Vegetables</h3>
+    </ion-card>
+    <ion-card>
+      <img src="assets/images/dairy.jpg"/>
+      <h3>Dairy</h3>
+    </ion-card>
+    <ion-card>
+      <img src="assets/images/meat.jpg"/>
+      <h3>Meat</h3>
+    </ion-card>
+    <ion-card>
+      <img src="assets/images/snacks.jpg"/>
+      <h3>Snacks</h3>
+    </ion-card>
+    <ion-card>
+      <img src="assets/images/pcare.jpg"/>
+      <h3>Personal Care</h3>
+    </ion-card>
+    <ion-card>
+      <img src="assets/images/mcare.jpg"/>
+      <h3>Medical Care</h3>
+    </ion-card>
+    <ion-card>
+      <img src="assets/images/hcare.jpg"/>
+      <h3>Health Care</h3>
     </ion-card>
 
   </div>
