@@ -1,29 +1,43 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-icon name="chevron-back" size="large"></ion-icon>
-    </ion-buttons>
-    <ion-buttons slot="primary">
-      <ion-button>
-        <ion-icon slot="icon-only" name="search"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title text-center mode="ios"><h2>Favourites</h2></ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-icon name="chevron-back" size="large"></ion-icon>
+      </ion-buttons>
+      <ion-buttons slot="primary">
+        <ion-button>
+          <ion-icon slot="icon-only" name="search"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title text-center mode="ios"><h2>Favourites</h2></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
 <ion-content>
+  <ion-toolbar text-center> 
+    <ion-row>
+      <ion-col>
+         <ion-button expand="block" color="light">Saved for later</ion-button>
+      </ion-col>
+     <ion-col>
+        <ion-button expand="block" color="light">Frequently bought</ion-button>
+     </ion-col>
+     
+    </ion-row>
+</ion-toolbar>
   <ion-list>
+    
     <ion-card >
       <!-- <ion-card-header>
         <ion-card-title>Oatmeal</ion-card-title>
       </ion-card-header> -->
       <ion-card-content>
-        <ion-row class="ion-align-items-center">
-          <ion-col size="4">
-            <img src="assets/images/fruits.jpg"/>
-          </ion-col>
-          <ion-col size="6">
-            <div class="container">
+        <div class="container">
+          <ion-row>
+            <ion-col size="5">
+               <img src="assets/images/oatmeal.jpg"/>
+            </ion-col>
+            <ion-col size="5">
+              <div class="container">
                  <ion-row size="4">
                 <b>Oatmeal</b>
               </ion-row>
@@ -34,17 +48,20 @@
                 <b>&#8377;170.00</b>
             </ion-row> 
             </div>
-        
-          </ion-col>
-          <ion-col size="2" class="ion-text-right">
-          
-            <ion-button fill="clear" >
-              <ion-icon name="cart" size="large"></ion-icon>
-            </ion-button>
+            </ion-col>
+            <ion-col size="2" style="padding-top: 0px;">
+              <div class="container">
+                <ion-button fill="clear" style="margin-top:0px;">
+                  <ion-icon name="heart" ></ion-icon>
+                </ion-button>  
+                <ion-button fill="clear" style="margin-top:0px;">
+                  <ion-icon name="cart" ></ion-icon>
+                </ion-button>  
                 
-              
-          </ion-col>
-        </ion-row>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div> 
       </ion-card-content>
     </ion-card>
     <ion-card >
@@ -52,34 +69,37 @@
         <ion-card-title>Oatmeal</ion-card-title>
       </ion-card-header> -->
       <ion-card-content>
-        <ion-row class="ion-align-items-center">
-          <ion-col size="4">
-            <img src="assets/images/fruits.jpg"/>
-          </ion-col>
-          <ion-col size="6">
-            <div class="container">
+        <div class="container">
+          <ion-row>
+            <ion-col size="5">
+               <img src="assets/images/cheese.jpg"/>
+            </ion-col>
+            <ion-col size="5">
+              <div class="container">
                  <ion-row size="4">
-                <b>Oatmeal</b>
+                <b>Cheese</b>
               </ion-row>
               <ion-row size="4">
-                
-                <b>200g 
-                  <ion-icon name="chevron-down"></ion-icon>
-                </b>
-                
+                <b>100g <ion-icon name="chevron-down"></ion-icon></b>
               </ion-row>
               <ion-row size="4">
-                <b>&#8377;170.00</b>
+                <b>&#8377;330.00</b>
             </ion-row> 
             </div>
-        
-          </ion-col>
-          <ion-col size="2" class="ion-text-right">
-            <ion-button fill="clear" >
-              <ion-icon name="cart" size="large"></ion-icon>
-            </ion-button>
-          </ion-col>
-        </ion-row>
+            </ion-col>
+            <ion-col size="2" style="padding-top: 0px;">
+              <div class="container">
+                <ion-button fill="clear" style="margin-top:0px;">
+                  <ion-icon name="heart" ></ion-icon>
+                </ion-button>  
+                <ion-button fill="clear" style="margin-top:0px;">
+                  <ion-icon name="cart" ></ion-icon>
+                </ion-button>  
+                
+              </div>
+            </ion-col>
+          </ion-row>
+        </div> 
       </ion-card-content>
     </ion-card>
     <ion-card >
@@ -87,31 +107,90 @@
         <ion-card-title>Oatmeal</ion-card-title>
       </ion-card-header> -->
       <ion-card-content>
-        <ion-row class="ion-align-items-center">
-          <ion-col size="4">
-            <img src="assets/images/fruits.jpg"/>
-          </ion-col>
-          <ion-col size="6">
-            <div class="container">
+        <div class="container">
+          <ion-row>
+            <ion-col size="5">
+               <img src="assets/images/choco bar.jpg"/>
+            </ion-col>
+            <ion-col size="5">
+              <div class="container">
                  <ion-row size="4">
-                <b>Oatmeal</b>
+                <b>Chocolate Bars</b>
               </ion-row>
               <ion-row size="4">
-                <b>200g <ion-icon name="chevron-down"></ion-icon></b>
+                <b>60g <ion-icon name="chevron-down"></ion-icon></b>
               </ion-row>
               <ion-row size="4">
-                <b>&#8377;170.00</b>
+                <b>&#8377;107.00</b>
             </ion-row> 
             </div>
-        
-          </ion-col>
-          <ion-col size="2" class="ion-text-right">
-            <ion-button fill="clear" >
-              <ion-icon name="cart" size="large"></ion-icon>
-            </ion-button>
-          </ion-col>
-        </ion-row>
+            </ion-col>
+            <ion-col size="2" style="padding-top: 0px;">
+              <div class="container">
+                <ion-button fill="clear" style="margin-top:0px;">
+                  <ion-icon name="heart" ></ion-icon>
+                </ion-button>  
+                <ion-button fill="clear" style="margin-top:0px;">
+                  <ion-icon name="cart" ></ion-icon>
+                </ion-button>  
+                
+              </div>
+            </ion-col>
+          </ion-row>
+        </div> 
+      </ion-card-content>
+    </ion-card>
+    <ion-card >
+      <!-- <ion-card-header>
+        <ion-card-title>Oatmeal</ion-card-title>
+      </ion-card-header> -->
+      <ion-card-content>
+        <div class="container">
+          <ion-row>
+            <ion-col size="5">
+               <img src="assets/images/wine.jpg"/>
+            </ion-col>
+            <ion-col size="5">
+              <div class="container">
+                 <ion-row size="4">
+                <b>Wine</b>
+              </ion-row>
+              <ion-row size="4">
+                <b>100ml <ion-icon name="chevron-down"></ion-icon></b>
+              </ion-row>
+              <ion-row size="4">
+                <b>&#8377;710.00</b>
+            </ion-row> 
+            </div>
+            </ion-col>
+            <ion-col size="2" style="padding-top: 0px;">
+              <div class="container">
+                <ion-button fill="clear" style="margin-top:0px;">
+                  <ion-icon name="heart" ></ion-icon>
+                </ion-button>  
+                <ion-button fill="clear" style="margin-top:0px;">
+                  <ion-icon name="cart" ></ion-icon>
+                </ion-button>  
+                
+              </div>
+            </ion-col>
+          </ion-row>
+        </div> 
       </ion-card-content>
     </ion-card>
   </ion-list>
 </ion-content>
+<!-- <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab">
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tab2">
+        <ion-icon name="heart"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  
+  </ion-tabs>
+   -->
