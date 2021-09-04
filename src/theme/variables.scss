@@ -74,6 +74,8 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-font-family: 'Glory';
 }
 
 @media (prefers-color-scheme: dark) {
@@ -233,4 +235,33 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+
+@font-face {
+  font-family: 'Glory';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Glory/Glory-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Glory';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/Glory/Glory-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Glory';
+  font-style: italic;
+  font-weight: normal;
+  src: url('../assets/fonts/Glory/Glory-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Glory';
+  font-style: italic;
+  font-weight: bold;
+  src: url('../assets/fonts/Glory/Glory-BoldItalic.ttf');
 }
